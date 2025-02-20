@@ -1,0 +1,197 @@
+// src/component/Header.scss
+.header {
+  background: transparent;
+  padding: 1rem;
+  border-radius: 10px;
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      font-size: 2rem;
+      color: white;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    .md\\:hidden {
+      display: block;
+
+      button {
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        svg {
+          width: 1.5rem;
+          height: 1.5rem;
+          stroke: white;
+        }
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .md\\:flex {
+      display: flex;
+      gap: 1rem;
+    }
+
+    ul {
+      color: white;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 1rem;
+
+      li {
+        a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          padding: 0.5rem 1rem;
+          border-radius: 5px;
+
+          &:hover,
+          &.active {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+    }
+  }
+
+  .md\\:hidden + .flex {
+    display: none;
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+ 
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background when scrolled */
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); /* Optional: Apply blur effect */
+}
+
+
+// .header {
+//     background: transparent;
+//     padding: 1rem;
+//     border-radius: 10px;
+  
+//     .flex {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+  
+//       h1 {
+//         font-size: 2rem;
+//         color: white;
+  
+//         a {
+//           text-decoration: none;
+//           color: inherit;
+//         }
+//       }
+  
+//       .md\\:hidden {
+//         display: block;
+  
+//         button {
+//           background: none;
+//           border: none;
+//           cursor: pointer;
+  
+//           svg {
+//             width: 1.5rem;
+//             height: 1.5rem;
+//             stroke: white;
+//           }
+//         }
+//       }
+  
+//       .hidden {
+//         display: none;
+//       }
+  
+//       .md\\:flex {
+//         display: flex;
+//         gap: 1rem;
+//       }
+  
+//       ul {
+//         list-style-type: none;
+//         padding: 0;
+//         margin: 0;
+//         display: flex;
+//         gap: 1rem;
+  
+//         li {
+//           a {
+//             color: white;
+//             text-decoration: none;
+//             font-weight: bold;
+//             padding: 0.5rem 1rem;
+//             border-radius: 5px;
+  
+//             &:hover,
+//             &.active {
+//               background: rgba(255, 255, 255, 0.1);
+//               backdrop-filter: blur(10px);
+//               -webkit-backdrop-filter: blur(10px);
+//               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//             }
+//           }
+//         }
+//       }
+//     }
+  
+//     .md\\:hidden + .flex {
+//       display: none;
+//     }
+//   }
+  
+//   @media (min-width: 768px) {
+//     .header .md\\:hidden {
+//       display: none;
+//     }
+  
+//     .header .md\\:flex {
+//       display: flex;
+//     }
+  
+//     .header .md\\:hidden + .flex {
+//       display: flex;
+//     }
+//   }
+  
+//   @media (max-width: 767px) {
+//     .header .md\\:hidden {
+//       display: block;
+//     }
+  
+//     .header .md\\:flex {
+//       display: none;
+//     }
+  
+//     .header .md\\:hidden + .flex {
+//       display: none;
+//     }
+//   }
+  

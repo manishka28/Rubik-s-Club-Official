@@ -1,0 +1,152 @@
+.home {
+  min-height: 100vh;
+
+  .homepage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    padding: 2rem;
+
+    .info {
+      max-width: 100%;
+      margin-bottom: 2rem;
+
+      .title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .description {
+        .text {
+          // margin-right: 60px;
+          font-size: 1rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      .register-button {
+        background-color: #d62d60;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 1.5rem;
+
+        &:hover {
+          background-color: #b1254d;
+        }
+      }
+    }
+
+    .image-info {
+      max-width: 100%;
+
+      .image-container {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .homepage {
+      flex-direction: row;
+
+      .info {
+        max-width: 50%;
+
+        .title {
+          font-size: 3rem;
+        }
+
+        .description {
+          .text {
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .image-info {
+        max-width: 40%;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .homepage {
+      .info {
+        .title {
+          font-size: 4rem;
+        }
+
+        .description {
+          .text {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+// background: url('../../public/bg.jpg') no-repeat center center fixed;
+  // background-size: cover; // Ensure the background image covers the entire viewport
+
+  
+// .Home {
+//   background: url('../../../Design/Events.png');
+//   background-size: cover;
+
+//   .homepage {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     min-height: 100vh;
+//     color: white;
+//     padding: 2rem;
+
+//     .content {
+//       max-width: 50%;
+
+//       h1 {
+//         font-size: 3rem;
+//         margin-bottom: 1rem;
+//       }
+
+//       p {
+//         font-size: 1.2rem;
+//         margin-bottom: 1.5rem;
+//       }
+
+//       .view-more {
+//         background-color: #d62d60;
+//         padding: 0.75rem 1.5rem;
+//         border: none;
+//         border-radius: 5px;
+//         color: white;
+//         font-size: 1rem;
+//         cursor: pointer;
+
+//         &:hover {
+//           background-color: #b1254d;
+//         }
+//       }
+//     }
+
+//     .image-placeholder {
+//       max-width: 40%;
+
+//       img {
+//         width: 100%;
+//         border-radius: 10px;
+//       }
+//     }
+//   }
+// }
