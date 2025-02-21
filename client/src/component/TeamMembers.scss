@@ -1,0 +1,133 @@
+.team-members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    padding: 40px 20px;
+  
+    .member-cards {
+      display: flex;
+      justify-content: center;
+      gap: 39px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+  
+      .member-card {
+        background: #181818;
+        border-radius: 16px;
+        padding: 20px;
+        text-align: center;
+        width: 200px;
+  
+        .member-image {
+          background: #333;
+          border-radius: 50%;
+          height: 120px;
+          width: 120px;
+          margin: 0 auto 20px;
+  
+          img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+  
+        .member-info {
+          h3 {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 8px;
+          }
+  
+          p {
+            color: #aaa;
+            font-size: 14px;
+            margin-bottom: 16px;
+          }
+  
+          .social-links {
+            background: none;
+            border: none;
+            color: #d62d60;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: underline;
+  
+            &:hover {
+              color: #b1254d;
+            }
+          }
+        }
+      }
+    }
+  
+    .view-more {
+      background-color: #b1254d;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+  
+      &:hover {
+        background-color: #d62d60;
+      }
+    }
+  
+    // Media queries for responsiveness
+    @media (max-width: 768px) { // Tablet and below
+      .member-cards {
+        gap: 20px;
+      }
+  
+      .member-card {
+        width: 180px;
+  
+        .member-image {
+          height: 100px;
+          width: 100px;
+        }
+      }
+    }
+  
+    @media (max-width: 480px) { // Mobile devices
+      .member-cards {
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+  
+        .member-card {
+          width: calc(50% - 16px);
+          margin-bottom: 20px;
+  
+          .member-image {
+            height: 80px;
+            width: 80px;
+          }
+  
+          .member-info {
+            h3 {
+              font-size: 14px;
+            }
+  
+            p {
+              font-size: 12px;
+            }
+  
+            .social-links {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+  
+      .view-more {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+    }
+  }
+  

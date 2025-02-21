@@ -1,0 +1,125 @@
+.footer {
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+
+  .footer-content {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 120px;
+    }
+
+    .links {
+      text-align: center;
+      margin-bottom: 20px;
+
+      @media (min-width: 768px) {
+        text-align: left;
+        margin-bottom: 0;
+      }
+
+      h2 {
+        font-size: larger;
+        font-weight: 1000;
+        margin-bottom: 30px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 5px;
+
+          a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline #b1254d solid 1.5px;
+            }
+          }
+        }
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        a {
+          color: white;
+          font-size: 20px;
+          margin: 0 5px;
+          margin-top: 10px;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #b1254d;
+          }
+        }
+      }
+    }
+
+    .map {
+      width: 100%;
+      margin-bottom: 20px;
+
+      @media (min-width: 768px) {
+        width: 50%;
+        margin-bottom: 0;
+      }
+
+      h2 {
+        font-size: large;
+        font-weight: 1000;
+        margin-bottom: 20px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 90;
+        border: none;
+
+        @media (min-width: 768px) {
+          height: 50%;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 35px;
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+
+      a {
+        color: white;
+        font-size: 24px;
+        margin: 0 10px;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #b1254d;
+        }
+      }
+    }
+
+    span {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Event 1",
+    "description": "Lorem ipsum dolor sit.",
+    "image": "https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324_1280.jpg",
+    "buttonText": "Register Now",
+    "date": "2024-09-15T00:00:00Z"
+  },
+  {
+    "title": "Event 2",
+    "description": "Lorem ipsum dolor sit amet.",
+    "image": "https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324_1280.jpg",
+    "buttonText": "Register Now",
+    "date": "2024-08-20T00:00:00Z"
+  },
+  {
+    "title": "Event 3",
+    "description": "Lorem ipsum dolor sit amet.",
+    "image": "https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324_1280.jpg",
+    "buttonText": "Register Now",
+    "date": "2023-12-01T00:00:00Z"
+  },
+  {
+    "title": "Event 4",
+    "description": "Lorem ipsum dolor sit amet.",
+    "image": "https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324_1280.jpg",
+    "buttonText": "Register Now",
+    "date": "2024-07-30T00:00:00Z"
+  },
+  {
+    "title": "Event 5",
+    "description": "Lorem ipsum dolor sit amet.",
+    "image": "https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324_1280.jpg",
+    "buttonText": "Register Now",
+    "date": "2024-10-10T00:00:00Z"
+  },
+  {
+    "title": "Event 6",
+    "description": "Lorem ipsum dolor sit amet.",
+    "image": "https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324_1280.jpg",
+    "buttonText": "Register Now",
+    "date": "2023-11-15T00:00:00Z"
+  }
+]
