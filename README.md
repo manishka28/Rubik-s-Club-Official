@@ -1,2 +1,0 @@
-# Rubik-s-Club-Official
-
