@@ -28,18 +28,15 @@ function Home() {
               </h1>
               <div className="description w-auto py-5">
                 <p className="text text-2xl font-thin w-93 p-4">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Voluptatibus, harum? Velit nihil error a, expedita magnam
-                  molestias. Consequatur reprehenderit sint, neque dicta minima
-                  eius nam dolorum incidunt ea quis iste.
+                Welcome to Rubik Club, the cultural hub of the MCA branch at Maulana Azad National Institute of Technology (MANIT). Our club aims to promote and nurture various talents among the students, providing them with a platform to showcase their skills and creativity.
                 </p>
               </div>
               <div className="register-button bg-red-600 w-40 h-16 flex justify-center items-center my-8 rounded-md backdrop-blur-lg mx-4">
                 <NavLink
-                  className="font-semibold text-2xl uppercase"
+                  className="font-semibold text-lg uppercase font-normal"
                   to="/register"
                 >
-                  Register
+                  View More
                 </NavLink>
               </div>
             </div>
