@@ -1,30 +1,35 @@
 .about-section {
-  background: linear-gradient(to bottom, #b1254d, #2c3e50);
-  margin: 70px;
-  color: white;
-  padding: 40px 20px;
-  border-radius: 18px;
+  background: linear-gradient(to bottom, #892066 5%, #3a3a3a00);
+  border-bottom: none;
+  margin-top: 11rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 15rem;
+  color: rgba(212, 200, 200, 0.37);
+  padding: 1.5rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 23rem;
 
   .about-content {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 4rem;
+    margin-right: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     .about-text {
       max-width: 50%;
-
       h2 {
         font-size: 3rem;
         font-weight: 800;
-        margin-bottom: 20px;
+        margin-bottom: 1.5rem;
       }
 
       p {
         font-size: 1rem;
         line-height: 1.5;
-        margin-bottom: 20px;
+        margin-bottom: 1.5rem;
       }
 
       .about-buttons {
@@ -32,28 +37,32 @@
         gap: 10px;
 
         .btn {
-          background-color: #007bff;
+          background-color: #A41045;
           color: white;
           border: none;
+          border-radius: 10px;
           padding: 10px 20px;
           cursor: pointer;
           transition: background-color 0.3s;
 
           &:hover {
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 5px #892066, 0 0 20px #892066;
           }
         }
       }
     }
 
     .about-image {
-      width: 40%;
-      height: 300px;
-      background-color: #333;
+    position: relative;
+    bottom: 10rem;
+    width: 40%;
+      height: 30rem;
+      background-color: #3333339d;
     }
   }
 
   @media (max-width: 1024px) {
+    
     .about-content {
       flex-direction: column;
       align-items: flex-start;
@@ -65,13 +74,14 @@
 
       .about-image {
         width: 100%;
-        height: 200px;
+        height: 500px;
       }
     }
   }
 
   @media (max-width: 768px) {
     margin: 20px;
+    margin-bottom:400px;
     padding: 20px 10px;
 
     .about-content {
@@ -89,12 +99,16 @@
       }
 
       .about-image {
-        height: 150px;
+        height: 200px;
+        margin-top: 180px;
       }
     }
   }
+  
 
   @media (max-width: 480px) {
+    .about-section{
+      height: 45rem;
     .about-content {
       .about-text {
         h2 {
@@ -107,8 +121,11 @@
       }
 
       .about-image {
-        height: 100px;
+        height: 200px;
+       margin-top: 80px;
+        
       }
     }
   }
+}
 }
