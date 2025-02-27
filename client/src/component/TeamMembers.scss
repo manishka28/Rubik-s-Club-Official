@@ -1,3 +1,10 @@
+.lift-up {
+  margin-top: -2rem;
+}
+
+.lift-down {
+  margin-top: 2rem;
+}
 .team-members {
     display: flex;
     flex-direction: column;
@@ -18,6 +25,9 @@
         padding: 20px;
         text-align: center;
         width: 200px;
+        height: 300px;
+
+        
   
         .member-image {
           background: #333;
@@ -50,13 +60,13 @@
           .social-links {
             background: none;
             border: none;
-            color: #d62d60;
+            color: #fff;
             font-size: 14px;
             cursor: pointer;
-            text-decoration: underline;
+            text-decoration: none;
   
             &:hover {
-              color: #b1254d;
+              color: #A41045;
             }
           }
         }
@@ -64,21 +74,28 @@
     }
   
     .view-more {
-      background-color: #b1254d;
+      background-color: #A41045;
       color: #fff;
       padding: 10px 20px;
-      border-radius: 30px;
+      border-radius: 10px;
       border: none;
       cursor: pointer;
       font-size: 16px;
   
       &:hover {
-        background-color: #d62d60;
+        background-color: #A41045;
       }
     }
   
     // Media queries for responsiveness
     @media (max-width: 768px) { // Tablet and below
+      .lift-up {
+        margin-top: 0;
+      }
+      
+      .lift-down {
+        margin-top: 0;
+      }
       .member-cards {
         gap: 20px;
       }
@@ -94,6 +111,13 @@
     }
   
     @media (max-width: 480px) { // Mobile devices
+      .lift-up {
+        margin-top: 0;
+      }
+      
+      .lift-down {
+        margin-top: 0;
+      }
       .member-cards {
         justify-content: center;
         gap: 16px;
@@ -102,6 +126,7 @@
         .member-card {
           width: calc(50% - 16px);
           margin-bottom: 20px;
+        
   
           .member-image {
             height: 80px;
