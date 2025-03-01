@@ -1,5 +1,5 @@
 import React from "react";
-import dp from "../../../Design/card-image.png";
+import dp from '../../../Design/card-image.png';
 
 const Cards = ({ cards }) => {
   return (
@@ -14,7 +14,7 @@ const Cards = ({ cards }) => {
           </div>
           <h1 className="font-bold text-white my-4">{card}</h1>
           <p className="font-thin text-white my-4">Text</p>
-          <p className="underline text-white font-bold my-4">Social Links</p>
+          <p className=" text-white font-bold my-4">Social Links</p>
         </div>
       ))}
     </div>

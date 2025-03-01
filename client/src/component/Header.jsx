@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import './Header.scss';
+import logo from '../../../Design/rubikx-logo-transparent.png';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,10 +23,13 @@ function Header() {
 
   return (
     <header className={`sticky top-0 z-50 ${isScrolled ? 'scrolled' : ''}`}>
-      <div className="flex justify-between items-center p-3 mx-4">
-        <h1 className="font-extrabold text-4xl text-white">
-          <NavLink to="/">RUBIKS CLUB</NavLink>
+      <div className="flex justify-between items-center p-2 mx-4">
+        <div className="flex items-center">
+      <img src={logo} alt="Logo" className="w-16 h-10 mr-2" />
+        <h1 className="font-extrabold bg-gradient-to-b from-slate-200 to-slate-400 bg-clip-text text-transparent text-4xl">
+          <NavLink to="/">Rubik's</NavLink>
         </h1>
+        </div>
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
@@ -64,13 +68,13 @@ function Header() {
             )}
           </button>
         </div>
-        <ul className="hidden md:flex gap-4">
+        <ul className="hidden md:flex gap-4 mr-10">
           <li className="text-white font-bold w-full md:w-1/2 md:pl-12">
             <NavLink
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-4 shadow-2xl"
+                  ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-2 pl-4 pr-4  shadow-4xl"
                   : undefined
               }
             >
@@ -82,7 +86,7 @@ function Header() {
               to="/event"
               className={({ isActive }) =>
                 isActive
-                  ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-4 shadow-2xl"
+                  ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-2 pl-4 pr-4 shadow-2xl"
                   : undefined
               }
             >
@@ -94,7 +98,7 @@ function Header() {
               to="/teams"
               className={({ isActive }) =>
                 isActive
-                  ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-4 shadow-2xl"
+                  ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-2  pl-4 pr-4 shadow-2xl"
                   : undefined
               }
             >
@@ -106,7 +110,7 @@ function Header() {
               to="/about"
               className={({ isActive }) =>
                 isActive
-                  ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-4 shadow-2xl"
+                  ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-2 pl-4 pr-4 shadow-2xl"
                   : undefined
               }
             >
@@ -118,7 +122,7 @@ function Header() {
               to="/gallery"
               className={({ isActive }) =>
                 isActive
-                  ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-4 shadow-2xl"
+                  ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-2 pl-4 pr-4 shadow-2xl"
                   : undefined
               }
             >
@@ -135,7 +139,7 @@ function Header() {
                 to="/"
                 className={({ isActive }) =>
                   isActive
-                    ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-4 shadow-2xl"
+                    ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-2 pl-4 pr-4 shadow-2xl"
                     : undefined
                 }
                 onClick={() => setIsOpen(false)}
@@ -148,7 +152,7 @@ function Header() {
                 to="/event"
                 className={({ isActive }) =>
                   isActive
-                    ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-4 shadow-2xl"
+                    ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-2 pl-4 pr-4 shadow-2xl"
                     : undefined
                 }
                 onClick={() => setIsOpen(false)}
@@ -161,7 +165,7 @@ function Header() {
                 to="/teams"
                 className={({ isActive }) =>
                   isActive
-                    ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-4 shadow-2xl"
+                    ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-2 pl-4 pr-4 shadow-2xl"
                     : undefined
                 }
                 onClick={() => setIsOpen(false)}
@@ -174,7 +178,7 @@ function Header() {
                 to="/about"
                 className={({ isActive }) =>
                   isActive
-                    ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-4 shadow-2xl"
+                    ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-2 pl-4 pr-4 shadow-2xl"
                     : undefined
                 }
                 onClick={() => setIsOpen(false)}
@@ -187,7 +191,7 @@ function Header() {
                 to="/gallery"
                 className={({ isActive }) =>
                   isActive
-                    ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-4 shadow-2xl"
+                    ? "bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-2 pl-4 pr-4 shadow-2xl"
                     : undefined
                 }
                 onClick={() => setIsOpen(false)}
